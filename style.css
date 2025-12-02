@@ -1,0 +1,328 @@
+/* ===========================
+   GLOBAL
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ===========================
+   UTILITIES
+=========================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.shaded {
+  background: #f8f9fb;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #0066ff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #ffffffee;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0066ff;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #555;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #0066ff;
+}
+
+/* ===========================
+   HERO
+=========================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+/* ===========================
+   SECTION HEADERS
+=========================== */
+.section-header .eyebrow {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0066ff;
+  letter-spacing: 1px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  margin: 12px 0;
+  font-weight: 700;
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #555;
+}
+
+/* ===========================
+   ABOUT CARDS
+=========================== */
+.about-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.about-card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.about-card i {
+  font-size: 38px;
+  color: #0066ff;
+  margin-bottom: 18px;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* ===========================
+   VISION LIST
+=========================== */
+.vision-list {
+  list-style: none;
+  margin-top: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vision-list li {
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  font-weight: 500;
+}
+
+/* ===========================
+   HIGHLIGHTS
+=========================== */
+.highlight-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.highlight-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+.highlight-card i {
+  font-size: 40px;
+  color: #0066ff;
+  margin-bottom: 18px;
+}
+
+/* ===========================
+   PROGRAMS
+=========================== */
+.program-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.program-card {
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+}
+
+/* ===========================
+   CTA
+=========================== */
+.cta {
+  padding: 80px 0;
+  background: #0066ff;
+  color: #fff;
+}
+
+.cta h2 {
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+  background: #111;
+  padding: 40px 0;
+  color: #bbb;
+  margin-top: 80px;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-copy {
+  font-size: 14px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 900px) {
+  .about-grid,
+  .highlight-grid,
+  .program-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-grid,
+  .highlight-grid,
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    margin: 12px 8px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
