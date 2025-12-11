@@ -133,6 +133,13 @@ section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* Tambahkan ini */
+.brand-logo {
+  height: 52px;      /* bebas kamu mau 40 / 48 / 52 */
+  width: auto;       /* biar proporsional */
+  object-fit: contain;
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
